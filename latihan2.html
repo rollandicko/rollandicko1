@@ -1,0 +1,45 @@
+
+<head>
+<title>Menghitung Luas Segitiga</title>
+</head>
+
+<script>
+    function hitungluas() {
+        const alas = document.getElementById("alas").value; // ambil nilai dari input
+        const tinggi = document.getElementById("tinggi").value; // ambil nilai dari input
+        const luas = alas * tinggi / 2; // menghitung luas segitiga
+        document.getElementById("hasil").innerHTML = "luas segitiga dengan alas" + tinggi + " adalah " + luas; }
+</script>
+
+<body>
+   <form>
+    <h4>Menghitung Luas Segitiga</h4>
+      <table>
+         <tr>
+              <td>Alas</td>
+              <td>:</td>
+              <td><input type="text" id="alas" name="alas"></td>
+         </tr>
+         <tr>
+              <td>Tinggi</td>
+              <td>:</td>
+              <td><input type="text" id="tinggi" name="tinggi"></td>
+         </tr> 
+          <tr>
+              <td>Luas</td>
+              <td>:</td>
+              <td><input type="text"  id="luas" name="luas" disabled="true" size="5"></td>
+         </tr>
+          <tr>
+              <td></td>
+              <td></td>
+              <td><input type="button" value="hitung" onClick="luas()"></td>
+         </tr>
+
+    
+
+
+      </table>
+    </form>
+</body>
+</html>
